@@ -1,0 +1,22 @@
+{
+  "name": "stream-creator-report-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/report_delivery_service.ts",
+    "start": "tsx src/report_delivery_service.ts",
+    "demo": "tsx scripts/send_sample_report.ts",
+    "test": "tsx --test test/report_job.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
